@@ -1,0 +1,14 @@
+{% extends 'admin/adminBase.html.twig' %}
+
+{% block title %}User list{% endblock %}
+
+{% block admin_body %}
+    <div class="container-fluid">
+        <h1 class="h3 mb-3 font-weight-normal">User list</h1>
+        <ul class="list-group">
+            {% for user in users %}
+                <li class="list-group-item">{{ user.email }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<ul class="nav">
+    <li class="nav-item">
+        <a class="nav-link active" href="{{ path('app_logout') }}">Logout</a>
+    </li>
+</ul>
+
+    {% block admin_body %}{% endblock %}
+{% endblock %}
